@@ -7,32 +7,32 @@
     tools:context=".CreateAlarm">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewConfiguration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@string/default_configuration"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintHorizontal_bias="0.218"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.035" />
 
     <Spinner
-        android:id="@+id/planets_spinner"
+        android:id="@+id/spinnerConfigurations"
         android:layout_width="305dp"
         android:layout_height="30dp"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintHorizontal_bias="0.397"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewConfiguration"
         app:layout_constraintVertical_bias="0.0" />
 
     <TimePicker
-        android:id="@+id/datePicker1"
-        android:layout_width="262dp"
+        android:id="@+id/pickerTime"
+        android:layout_width="305dp"
         android:layout_height="213dp"
         android:layout_marginTop="10dp"
         android:timePickerMode="spinner"
@@ -40,27 +40,30 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.404"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/planets_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerConfigurations"
         app:layout_constraintVertical_bias="0.0" />
 
+
     <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="319dp"
+        android:id="@+id/editTextName"
+        android:layout_width="305dp"
         android:layout_height="28dp"
         android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/datePicker1"
-        app:layout_constraintVertical_bias="0.054" />
-
+        app:layout_constraintTop_toBottomOf="@+id/pickerTime"
+        app:layout_constraintVertical_bias="0.016"
+        android:autofillHints=""
+        tools:ignore="LabelFor" />
 
     <EditText
-        android:id="@+id/edit_text"
-        android:layout_width="314dp"
+        android:id="@+id/editTextDescription"
+        android:layout_width="305dp"
         android:layout_height="87dp"
         android:layout_marginTop="10dp"
         android:autofillHints=""
@@ -68,125 +71,131 @@
         android:inputType="text|textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.397"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextName"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="LabelFor" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewTone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="TextView"
+        android:text="@string/tone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDescription"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewReplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="TextView"
+        android:text="@string/replay"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.549"
+        app:layout_constraintHorizontal_bias="0.582"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_text"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDescription"
         app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
-        android:id="@+id/tone_name"
-        android:layout_width="119dp"
+        android:id="@+id/spinnerTone"
+        android:layout_width="145dp"
         android:layout_height="24dp"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTone"
         app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
-        android:id="@+id/tone_name2"
-        android:layout_width="120dp"
+        android:id="@+id/spinnerReplay"
+        android:layout_width="145dp"
         android:layout_height="24dp"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintHorizontal_bias="0.786"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewReplay"
+        app:layout_constraintVertical_bias="0.003" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewAlarm"
         android:layout_width="101dp"
         android:layout_height="84dp"
         android:layout_marginTop="24dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toEndOf="@+id/spinnerTone"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tone_name"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTone"
         app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/description" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/textViewImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="55dp"
-        android:layout_marginEnd="36dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/tone_name" />
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        android:text="@string/image"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewAlarm"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTone" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="50dp"
-        android:layout_height="44dp"
+        android:id="@+id/imageButtonCamera"
+        android:layout_width="27dp"
+        android:layout_height="23dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.037"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/tone_name2"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAlarm"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerReplay"
         app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@drawable/baseline_photo_camera_24"
+        android:contentDescription="@string/description" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="63dp"
-        android:layout_height="43dp"
+        android:id="@+id/imageButtonCancel"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
         android:layout_marginTop="27dp"
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewAlarm"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAlarm"
+        app:layout_constraintVertical_bias="0.08"
+        tools:srcCompat="@drawable/baseline_cancel_24"
+        android:contentDescription="@string/description" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="63dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="24dp"
+        android:id="@+id/imageButtonSave"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="88dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.098"
-        app:layout_constraintStart_toEndOf="@+id/imageButton3"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.085"
-        tools:srcCompat="@tools:sample/avatars" />
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAlarm"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAlarm"
+        app:layout_constraintVertical_bias="0.969"
+        tools:srcCompat="@drawable/baseline_check_circle_outline_24"
+        android:contentDescription="@string/description" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
