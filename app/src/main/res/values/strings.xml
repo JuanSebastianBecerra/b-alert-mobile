@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">B-alert</string>
+    <string name="create_alarm">Crear alarma</string>
+    <string name="default_configuration">Configuración por defecto (Opcional)</string>
+    <string name="tone">Tono</string>
+    <string name="replay">Repetir</string>
+    <string name="image">Imagen</string>
+    <string name="description">Imagen default</string>
 </resources>

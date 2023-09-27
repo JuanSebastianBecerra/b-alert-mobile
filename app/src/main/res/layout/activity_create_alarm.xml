@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAlarm">
+
+    <TextView
+        android:id="@+id/textViewConfiguration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_configuration"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <Spinner
+        android:id="@+id/spinnerConfigurations"
+        android:layout_width="322dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewConfiguration"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TimePicker
+        android:id="@+id/pickerTime"
+        android:layout_width="321dp"
+        android:layout_height="211dp"
+        android:layout_marginTop="10dp"
+        android:timePickerMode="spinner"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerConfigurations"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="323dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="35dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pickerTime"
+        app:layout_constraintVertical_bias="0.016"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/editTextDescription"
+        android:layout_width="321dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="35dp"
+        android:autofillHints=""
+        android:gravity="top"
+        android:inputType="text|textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textViewTone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/tone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDescription"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textViewReplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/replay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDescription"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <Spinner
+        android:id="@+id/spinnerTone"
+        android:layout_width="145dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spinnerReplay"
+        android:layout_width="145dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewReplay"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageViewAlarm"
+        android:layout_width="101dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toEndOf="@+id/spinnerTone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTone"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@mipmap/alarma"
+        android:contentDescription="@string/description" />
+
+    <TextView
+        android:id="@+id/textViewImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="56dp"
+        android:text="@string/image"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewAlarm"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTone" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCamera"
+        android:layout_width="27dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="23dp"
+        android:contentDescription="@string/description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAlarm"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerReplay"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/baseline_photo_camera_24" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCancel"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewAlarm"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAlarm"
+        app:layout_constraintVertical_bias="0.08"
+        app:srcCompat="@drawable/baseline_cancel_24"
+        android:contentDescription="@string/description" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSave"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="88dp"
+        android:contentDescription="@string/description"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageViewAlarm"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewAlarm"
+        app:layout_constraintVertical_bias="0.622"
+        app:srcCompat="@drawable/baseline_check_circle_outline_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="14dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerConfigurations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewConfiguration"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/baseline_info_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
