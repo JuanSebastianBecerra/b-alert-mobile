@@ -20,9 +20,11 @@
 
     <Spinner
         android:id="@+id/spinnerConfigurations"
-        android:layout_width="305dp"
-        android:layout_height="30dp"
+        android:layout_width="322dp"
+        android:layout_height="21dp"
+        android:layout_marginLeft="35dp"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.397"
@@ -32,10 +34,12 @@
 
     <TimePicker
         android:id="@+id/pickerTime"
-        android:layout_width="305dp"
-        android:layout_height="213dp"
+        android:layout_width="321dp"
+        android:layout_height="211dp"
         android:layout_marginTop="10dp"
         android:timePickerMode="spinner"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.404"
@@ -46,9 +50,12 @@
 
     <EditText
         android:id="@+id/editTextName"
-        android:layout_width="305dp"
+        android:layout_width="323dp"
         android:layout_height="28dp"
+        android:layout_marginLeft="35dp"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="35dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
         android:text=""
@@ -58,20 +65,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pickerTime"
         app:layout_constraintVertical_bias="0.016"
-        android:autofillHints=""
         tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/editTextDescription"
-        android:layout_width="305dp"
-        android:layout_height="87dp"
+        android:layout_width="321dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="35dp"
         android:layout_marginTop="10dp"
+        android:layout_marginRight="35dp"
         android:autofillHints=""
         android:gravity="top"
         android:inputType="text|textMultiLine"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintHorizontal_bias="0.379"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextName"
         app:layout_constraintVertical_bias="0.0"
@@ -98,10 +106,10 @@
         android:text="@string/replay"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDescription"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.003" />
 
     <Spinner
         android:id="@+id/spinnerTone"
@@ -122,16 +130,18 @@
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewReplay"
-        app:layout_constraintVertical_bias="0.003" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageViewAlarm"
         android:layout_width="101dp"
         android:layout_height="84dp"
         android:layout_marginTop="24dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.482"
@@ -158,14 +168,14 @@
         android:layout_height="23dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="23dp"
+        android:contentDescription="@string/description"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintHorizontal_bias="0.038"
         app:layout_constraintStart_toEndOf="@+id/imageViewAlarm"
         app:layout_constraintTop_toBottomOf="@+id/spinnerReplay"
         app:layout_constraintVertical_bias="0.0"
-        tools:srcCompat="@drawable/baseline_photo_camera_24"
-        android:contentDescription="@string/description" />
+        tools:srcCompat="@drawable/baseline_photo_camera_24" />
 
     <ImageButton
         android:id="@+id/imageButtonCancel"
@@ -187,15 +197,29 @@
         android:layout_width="60dp"
         android:layout_height="40dp"
         android:layout_marginBottom="88dp"
+        android:contentDescription="@string/description"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageViewAlarm"
         app:layout_constraintTop_toBottomOf="@+id/imageViewAlarm"
-        app:layout_constraintVertical_bias="0.969"
-        tools:srcCompat="@drawable/baseline_check_circle_outline_24"
-        android:contentDescription="@string/description" />
+        app:layout_constraintVertical_bias="0.622"
+        tools:srcCompat="@drawable/baseline_check_circle_outline_24" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="14dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerConfigurations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textViewConfiguration"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:srcCompat="@drawable/baseline_info_24" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
