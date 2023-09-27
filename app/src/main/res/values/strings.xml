@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">B-alert</string>
+    <string name="create_alarm">Crear alarma</string>
 </resources>
