@@ -3,10 +3,12 @@ package com.example.b_alert
 import android.app.AlertDialog
 import android.app.Dialog
 import android.content.DialogInterface
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
+import android.widget.ImageButton
 import android.widget.Spinner
+import androidx.appcompat.app.AppCompatActivity
 
 class CreateAlarm : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +18,23 @@ class CreateAlarm : AppCompatActivity() {
         createToneSpinner();
         createReplaySpinner()
         createConfigurationSpinner()
+
+        val buttonCancelClick = findViewById<ImageButton>(R.id.imageButtonCancel)
+        buttonCancelClick.setOnClickListener {
+            val intent = Intent(this, ListAlarm::class.java)
+            startActivity(intent)
+        }
+
+        val buttonSaveClick = findViewById<ImageButton>(R.id.imageButtonSave)
+        buttonSaveClick.setOnClickListener {
+            val intent = Intent(this, ListAlarm::class.java)
+            startActivity(intent)
+        }
+    }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
     }
 
     private fun createToneSpinner(){
