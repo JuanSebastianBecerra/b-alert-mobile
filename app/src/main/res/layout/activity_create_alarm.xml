@@ -8,12 +8,16 @@
 
     <TextView
         android:id="@+id/textViewConfiguration"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="249dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="40dp"
         android:text="@string/default_configuration"
+        android:textColor="#176B87"
+        android:textSize="15sp"
+        android:fontFamily="@font/advent_pro_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.218"
+        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.035" />
@@ -75,9 +79,11 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="35dp"
         android:autofillHints=""
+        android:background="@null"
         android:gravity="top"
         android:inputType="text|textMultiLine"
         android:hint="@string/description_hint"
+        android:fontFamily="@font/advent_pro_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.379"
@@ -88,16 +94,20 @@
 
     <TextView
         android:id="@+id/textViewTone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="73dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="10dp"
         android:text="@string/tone"
+        android:textColor="#176B87"
+        android:textSize="20sp"
+        android:fontFamily="@font/advent_pro_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintHorizontal_bias="0.003"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDescription"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.003" />
 
     <TextView
         android:id="@+id/textViewReplay"
@@ -105,9 +115,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/replay"
+        android:fontFamily="@font/advent_pro_bold"
+        android:textColor="#176B87"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintHorizontal_bias="0.642"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDescription"
         app:layout_constraintVertical_bias="0.003" />
@@ -158,8 +171,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="56dp"
+        android:layout_marginEnd="40dp"
         android:text="@string/image"
+        android:layout_marginStart="30dp"
+        android:fontFamily="@font/advent_pro_bold"
+        android:textColor="#176B87"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/imageViewAlarm"
         app:layout_constraintTop_toBottomOf="@+id/spinnerTone" />
 
