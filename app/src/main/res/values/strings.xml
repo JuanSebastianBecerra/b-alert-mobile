@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">B-alert</string>
     <string name="create_alarm">Crear alarma</string>
+    <string name="detail_alarm">Detalles alarma</string>
     <string name="name_hint"> Nombre</string>
     <string name="description_hint">Descripción</string>
     <string name="default_configuration">Configuración por defecto (Opcional)</string>
@@ -8,6 +9,12 @@
     <string name="replay">Repetir</string>
     <string name="image">Imagen</string>
     <string name="description">Imagen default</string>
+    <string name="alarm_time_detail">5 : 00</string>
+    <string name="alarm_name">Despertar</string>
+    <string name="alarm_time_format">A.M.</string>
+    <string name="jungle_tone">Jungle</string>
+    <string name="weekly_replay">Semanal</string>
+    <string name="alarm_description_detail">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500</string>
     <string-array name="tone_array">
         <item>Seleccione …</item>
         <item>Jungle</item>
