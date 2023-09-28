@@ -9,4 +9,9 @@ class DetailAlarm : AppCompatActivity() {
         setContentView(R.layout.activity_detail_alarm)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
+
+    override fun onSupportNavigateUp(): Boolean {
+        finish()
+        return true
+    }
 }
