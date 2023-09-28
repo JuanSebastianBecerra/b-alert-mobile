@@ -19,7 +19,7 @@
         tools:layout_editor_absoluteY="30dp" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/alarm2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="316dp"
@@ -37,10 +37,10 @@
         android:text="P.M."
         android:textColor="#176B87"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/alarm1"
         app:layout_constraintHorizontal_bias="0.571"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+        app:layout_constraintStart_toStartOf="@+id/alarm2"
+        app:layout_constraintTop_toTopOf="@+id/alarm2" />
 
     <TextView
         android:id="@+id/textView13"
@@ -51,10 +51,10 @@
         android:text="4 : 30"
         android:textColor="#176B87"
         android:textSize="48sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/alarm2"
         app:layout_constraintHorizontal_bias="0.181"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+        app:layout_constraintStart_toStartOf="@+id/alarm1"
+        app:layout_constraintTop_toTopOf="@+id/alarm2" />
 
     <TextView
         android:id="@+id/textView"
@@ -72,7 +72,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/alarm1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
@@ -86,20 +86,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="76dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/alarm1"
         app:layout_constraintHorizontal_bias="0.941"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="@+id/alarm1"
+        app:layout_constraintTop_toTopOf="@+id/alarm1" />
 
     <Switch
         android:id="@+id/switch5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/alarm2"
         app:layout_constraintHorizontal_bias="0.959"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+        app:layout_constraintStart_toStartOf="@+id/alarm2"
+        app:layout_constraintTop_toTopOf="@+id/alarm2" />
 
     <TextView
         android:id="@+id/textView2"
@@ -110,10 +110,10 @@
         android:text="5 : 00"
         android:textColor="#176B87"
         android:textSize="48sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/alarm1"
         app:layout_constraintHorizontal_bias="0.181"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="@+id/alarm1"
+        app:layout_constraintTop_toTopOf="@+id/alarm1" />
 
     <TextView
         android:id="@+id/textView3"
@@ -124,10 +124,10 @@
         android:text="Despertar"
         android:textColor="#176B87"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/alarm1"
         app:layout_constraintHorizontal_bias="0.156"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="@+id/alarm1"
+        app:layout_constraintTop_toTopOf="@+id/alarm1" />
 
     <TextView
         android:id="@+id/textView4"
@@ -138,20 +138,20 @@
         android:text="A.M."
         android:textColor="#176B87"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/alarm1"
         app:layout_constraintHorizontal_bias="0.621"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintStart_toStartOf="@+id/alarm1"
+        app:layout_constraintTop_toTopOf="@+id/alarm1" />
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="41dp"
         android:layout_height="38dp"
         android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/alarm1"
         app:layout_constraintHorizontal_bias="0.94"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/alarm1"
+        app:layout_constraintTop_toTopOf="@+id/alarm1"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <ImageButton
@@ -159,10 +159,10 @@
         android:layout_width="41dp"
         android:layout_height="38dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="@+id/alarm2"
         app:layout_constraintHorizontal_bias="0.94"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toTopOf="@+id/imageView7"
+        app:layout_constraintStart_toStartOf="@+id/alarm2"
+        app:layout_constraintTop_toTopOf="@+id/alarm2"
         app:srcCompat="@android:drawable/ic_menu_edit" />
 
     <TextView
@@ -174,10 +174,10 @@
         android:text="Finalizar Trabajo"
         android:textColor="#176B87"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/alarm1"
         app:layout_constraintHorizontal_bias="0.156"
-        app:layout_constraintStart_toStartOf="@+id/imageView7"
-        app:layout_constraintTop_toTopOf="@+id/imageView7" />
+        app:layout_constraintStart_toStartOf="@+id/alarm2"
+        app:layout_constraintTop_toTopOf="@+id/alarm2" />
 
     <ImageButton
         android:id="@+id/imageButton6"
