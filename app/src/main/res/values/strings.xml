@@ -1,9 +1,30 @@
 <resources>
     <string name="app_name">B-alert</string>
     <string name="create_alarm">Crear alarma</string>
+    <string name="name_hint"> Nombre</string>
+    <string name="description_hint">Descripción</string>
     <string name="default_configuration">Configuración por defecto (Opcional)</string>
     <string name="tone">Tono</string>
     <string name="replay">Repetir</string>
     <string name="image">Imagen</string>
     <string name="description">Imagen default</string>
+    <string-array name="tone_array">
+        <item>Seleccione …</item>
+        <item>Jungle</item>
+        <item>Drums</item>
+        <item>Zamba</item>
+    </string-array>
+    <string-array name="replay_array">
+        <item>Seleccione …</item>
+        <item>Diario</item>
+        <item>Semanal</item>
+        <item>Por días</item>
+    </string-array>
+    <string-array name="configuration_array">
+        <item>Seleccione …</item>
+        <item>Pomodoro</item>
+        <item>Entrenamiento</item>
+        <item>Almuerzo</item>
+    </string-array>
+
 </resources>
